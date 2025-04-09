@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LANDING PAGE ATLANTA CI</title>
-    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="stylesheet" href="dist/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .bg-overlay {
@@ -16,7 +16,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background-image: url('./images/Header.png');
+            background-image: url("./images/Header.png");
             background-size: cover;
             background-position: center;
             opacity: 0.1;
@@ -35,13 +35,13 @@
                 onmouseenter="showHoverImage()" onmouseleave="resetImage()" onclick="changeImage()">
                 <!-- Image normale (affichée par défaut) -->
                 <img id="menuImage" src="./images/menu (4).png" alt="Menu"
-                    class="absolute inset-0 transition-opacity duration-300 m-auto w-7">
+                    class="absolute inset-0 transition-opacity duration-300 m-auto w-7" />
                 <!-- Image au survol (cachée par défaut) -->
                 <img id="hoverImage" src="./images/menu (3).png" alt="Menu Hover"
-                    class="absolute inset-0 transition-opacity duration-300 m-auto w-5">
+                    class="absolute inset-0 transition-opacity duration-300 m-auto w-5" />
             </div>
             <div class="logo lg:ml-10">
-                <img src="./images/AtantaLogoHD.png" alt="Logo" class="w-44 h-auto">
+                <img src="./images/AtantaLogoHD.png" alt="Logo" class="w-44 h-auto" />
             </div>
         </div>
         <div class="menu w-[850px] px-4 py-2 hidden lg:flex">
@@ -53,7 +53,7 @@
                     <li
                         class="hover:bg-gray-300 p-2 rounded-sm transition duration-300 flex items-center justify-center relative group gap-1">
                         <a href="#">Assurance Auto</a>
-                        <img src="./images/fleche-vers-le-bas (1).png" alt="">
+                        <img src="./images/fleche-vers-le-bas (1).png" alt="" />
                     </li>
                     <li class="hover:bg-gray-300 p-2 rounded-sm transition duration-300">
                         <a href="#">Qui sommes-nous</a>
@@ -66,7 +66,7 @@
                     </li>
                     <button
                         class="flex items-center bg-white text-[#ff802b] border border-[#ff802b] p-2 rounded-sm hover:bg-gray-300 transition duration-300">
-                        <img src="./images/contactez-nous.png" alt="">
+                        <img src="./images/contactez-nous.png" alt="" />
                         Mon Compte
                     </button>
                 </ul>
@@ -84,19 +84,23 @@
             <!-- Texte au premier plan -->
             <div class="lg:flex lg:items-center lg:justify-around text-start text-white z-10 w-full h-full lg:px-32">
                 <div class="block text-start p-4 text-white z-10 w-auto h-full lg:w-1/2 lg:h-full lg:p-10">
-                    <h2 class="text-[#497b9c] font-bold lg:text-[2rem]">Votre Sécurité, Notre Priorité</h2>
-                    <h1 class="text-[#ff802b] font-bold text-2xl">À des tarifs accessibles</h1>
+                    <h2 class="text-[#497b9c] font-bold lg:text-[2rem]">
+                        Votre Sécurité, Notre Priorité
+                    </h2>
+                    <h1 class="text-[#ff802b] font-bold text-2xl">
+                        À des tarifs accessibles
+                    </h1>
                     <ul class="flex flex-col text-start items-start gap-4 mt-4 text-[0.6rem]">
                         <li class="flex items-center gap-2 text-black lg:text-[1rem]">
-                            <img src="./images/cocher.png" alt="">
+                            <img src="./images/cocher.png" alt="" />
                             <p>Assurez votre quotidien sans difficulté.</p>
                         </li>
                         <li class="flex items-center gap-2 text-black lg:text-[1rem]">
-                            <img src="./images/cocher.png" alt="">
+                            <img src="./images/cocher.png" alt="" />
                             <p>Consultez gratuitement nos tarifs compétitifs.</p>
                         </li>
                         <li class="flex items-center gap-2 text-black lg:text-[1rem]">
-                            <img src="./images/cocher.png" alt="">
+                            <img src="./images/cocher.png" alt="" />
                             <p>Obtenez votre attestation digitale instantanément.</p>
                         </li>
                     </ul>
@@ -105,11 +109,11 @@
                         <h2>CALCULER MON ASSURANCE</h2>
                     </div>
                     <div class="hidden lg:flex pt-2">
-                        <img src="./images/Logos_payment.png" alt="">
+                        <img src="./images/Logos_payment.png" alt="" />
                     </div>
                 </div>
                 <div class="photo hidden lg:flex items-center justify-center w-1/2 h-full">
-                    <img src="./images/Header.png" alt="Image d'assurance">
+                    <img src="./images/Header.png" alt="Image d'assurance" />
                 </div>
             </div>
             <div
@@ -117,212 +121,384 @@
                 <h2>CALCULER MON ASSURANCE</h2>
             </div>
             <div class="flex lg:hidden items-start justify-center h-14 bg-gray-50 pt-2">
-                <img src="./images/Logos_payment.png" class="w-40" alt="">
+                <img src="./images/Logos_payment.png" class="w-40" alt="" />
             </div>
         </section>
-        <section class="text-center bg-slate-200 sm:h-[350px] lg:h-[90vh] lg:py-10">
+        <section class="text-center bg-slate-200 h-auto sm:h-[350px] lg:h-[90vh] lg:py-10 pb-8 lg:pb-0">
             <div class="flex flex-col items-center justify-center w-full h-20">
-                <h2 class="text-[#497b9c] py-2 font-bold lg:text-3xl">Pourquoi choisir ATLANTA ASSURANCE?</h2>
+                <h2 class="text-[#497b9c] py-2 font-bold lg:text-3xl">
+                    Pourquoi choisir ATLANTA ASSURANCE?
+                </h2>
                 <span class="bg-[#ff802b] w-[100px] h-1"></span>
             </div>
-            <div class="grid grid-rows-3 grid-cols-3 gap-x-6 gap-y-4 lg:gap-y-10 px-10 lg:px-40 lg:py-20 text-center items-start box-border">
-                <div class="grid grid-rows-3 gap-2">
+            <div
+                class="grid sm:grid-rows-3 grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-4 lg:gap-y-10 px-10 lg:px-40 lg:py-20 text-center items-start box-border">
+                <div class="grid sm:grid-rows-3 gap-2">
                     <figure class="flex flex-col items-center justify-center">
-                        <img src="./images/digital_humain.png" class="w-[60px] lg:w-[108px] mx-auto mb-4 lg:mb-10" alt="">
+                        <img src="./images/digital_humain.png" class="w-[60px] lg:w-[108px] mx-auto mb-4 lg:mb-10"
+                            alt="" />
                         <h2 class="text-[#497b9c] font-bold lg:text-xl leading-tight mb-4 lg:mb-10">
-                            Un assureur moderne<br>et accessible
+                            Un assureur moderne<br />et accessible
                         </h2>
                     </figure>
                     <p class="text-[0.7rem] text-gray-500 lg:text-[1rem] leading-snug">
-                        Nous associons les avantages du digital avec une présence humaine pour vous offrir le meilleur
-                        service. Nos conseillers sont toujours disponibles pour vous accompagner dans toutes vos démarches.
+                        Nous associons les avantages du digital avec une présence humaine
+                        pour vous offrir le meilleur service. Nos conseillers sont
+                        toujours disponibles pour vous accompagner dans toutes vos
+                        démarches.
                     </p>
                 </div>
 
-                <div class="grid grid-rows-3 gap-2">
+                <div class="grid sm:grid-rows-3 gap-2">
                     <figure class="flex flex-col items-center justify-center">
-                        <img src="./images/paiement_sinistres.png" class="w-[55px] lg:w-[100px] mx-auto mb-4 lg:mb-10" alt="">
+                        <img src="./images/paiement_sinistres.png" class="w-[55px] lg:w-[100px] mx-auto mb-4 lg:mb-10"
+                            alt="" />
                         <h2 class="text-[#497b9c] font-bold lg:text-xl leading-tight mb-4 lg:mb-10">
-                            Un assureur qui respecte<br>ses engagements
+                            Un assureur qui respecte<br />ses engagements
                         </h2>
                     </figure>
                     <p class="text-[0.7rem] text-gray-500 lg:text-[1rem] leading-snug">
-                        Nous sommes réputés pour notre rapidité et notre efficacité dans le traitement et le paiement des
-                        sinistres, assurant ainsi votre tranquillité d'esprit en cas d'incident.
+                        Nous sommes réputés pour notre rapidité et notre efficacité dans
+                        le traitement et le paiement des sinistres, assurant ainsi votre
+                        tranquillité d'esprit en cas d'incident.
                     </p>
                 </div>
 
-                <div class="grid grid-rows-3 gap-2">
+                <div class="grid sm:grid-rows-3 gap-2">
                     <figure class="flex flex-col items-center justify-center">
-                        <img src="./images/jeune_dynamique.png" class="w-[80px] lg:w-[145px] mx-auto mb-4 lg:mb-10" alt="">
+                        <img src="./images/jeune_dynamique.png" class="w-[80px] lg:w-[145px] mx-auto mb-4 lg:mb-10"
+                            alt="" />
                         <h2 class="text-[#497b9c] font-bold lg:text-xl leading-tight mb-4 lg:mb-10">
-                            Un assureur jeune<br>et dynamique
+                            Un assureur jeune<br />et dynamique
                         </h2>
                     </figure>
                     <p class="text-[0.7rem] text-gray-500 lg:text-[1rem] leading-snug">
-                        Depuis notre création en 2016, nous continuons à construire et nous progressons. Grâce à notre
-                        expertise et à notre engagement envers nos assurés, Atlanta Assurance est devenue un acteur clé du
+                        Depuis notre création en 2016, nous continuons à construire et
+                        nous progressons. Grâce à notre expertise et à notre engagement
+                        envers nos assurés, Atlanta Assurance est devenue un acteur clé du
                         marché de l'assurance en Côte d'Ivoire.
                     </p>
                 </div>
-                
             </div>
-
         </section>
-        <section class="text-center bg-slate-50 sm:h-[250px] lg:h-[45vh] lg:pt-4">
+        <section class="text-center bg-slate-50 sm:h-[250px] lg:h-[45vh] lg:pt-4 pb-8 lg:pb-0">
             <div class="flex flex-col items-center justify-center w-full h-20">
-                <h2 class="text-[#497b9c] py-2 font-bold lg:text-2xl">Votre PROTECTION commence ici : Veuillez découvrir
-                    nos OFFRES</h2>
+                <h2 class="text-[#497b9c] py-2 font-bold lg:text-2xl">
+                    Votre PROTECTION commence ici : Veuillez découvrir nos OFFRES
+                </h2>
                 <span class="bg-[#ff802b] w-[100px] h-1"></span>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-4 w-full gap-8 p-4 lg:gap-4 lg:px-10 lg:py-10">
                 <div class="flex flex-col items-center justify-center w-full border border-gray-300 p-2">
-                    <img src="./images/car.png" class="w-[100px]" alt="">
+                    <img src="./images/car.png" class="w-[100px]" alt="" />
                     <h2 class="text-gray-400 font-bold">Voiture</h2>
                 </div>
                 <div class="flex flex-col items-center justify-center w-full border border-gray-300 p-2">
-                    <img src="./images/scooter.png" class="w-[100px]" alt="">
+                    <img src="./images/scooter.png" class="w-[100px]" alt="" />
                     <h2 class="text-gray-400 font-bold">Moto</h2>
                 </div>
                 <div class="flex flex-col items-center justify-center w-full border border-gray-300 p-2">
-                    <img src="./images/van.png" class="w-[100px]" alt="">
+                    <img src="./images/van.png" class="w-[100px]" alt="" />
                     <h2 class="text-gray-400 font-bold">Camionette</h2>
                 </div>
                 <div class="flex flex-col items-center justify-center w-full border border-gray-300 p-2">
-                    <img src="./images/camion.png" class="w-[100px]" alt="">
+                    <img src="./images/camion.png" class="w-[100px]" alt="" />
                     <h2 class="text-gray-400 font-bold">Camion</h2>
                 </div>
             </div>
         </section>
-        <section class="text-center sm:h-[620px] lg:h-[110vh] lg:px-10 lg:py-10 bg-gray-200">
+        <section class="text-center sm:h-[620px] lg:h-[110vh] lg:px-10 lg:py-10 bg-gray-200 pb-8 lg:pb-0">
             <div class="flex flex-col items-center justify-center w-full h-20">
-                <h2 class="text-[#497b9c] py-2 font-bold lg:text-2xl">Démarrer avec ATLANTA ASSURANCE : Un Processus
-                    Simple</h2>
+                <h2 class="text-[#497b9c] py-2 font-bold lg:text-2xl">
+                    Démarrer avec ATLANTA ASSURANCE : Un Processus Simple
+                </h2>
                 <span class="bg-[#ff802b] w-[100px] h-1"></span>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-4 w-full gap-8 py-4 px-16 lg:gap-4 lg:px-10 lg:py-8 lg:mt-8 text-center">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-4 w-full gap-8 py-4 px-16 lg:gap-4 lg:px-10 lg:py-8 lg:mt-8 text-center">
                 <div class="gap-2">
                     <figure class="flex flex-col items-center justify-center">
-                        <img src="./images/le-marketing-numerique.png" class="w-[100px] mx-auto mb-4" alt="">
+                        <img src="./images/le-marketing-numerique.png" class="w-[100px] mx-auto mb-4" alt="" />
                         <div class="flex flex-col items-center justify-center">
-                            <h2 class="text-[#6bb5e7] font-bold">Saisissez vos Informations</h2>
-                            <h2 class="text-[#497b9c] font-bold mb-4">en toute Confiance</h2>
+                            <h2 class="text-[#6bb5e7] font-bold">
+                                Saisissez vos Informations
+                            </h2>
+                            <h2 class="text-[#497b9c] font-bold mb-4">
+                                en toute Confiance
+                            </h2>
                         </div>
                     </figure>
                     <p class="text-[0.7rem] text-gray-500 lg:text-[1rem]">
-                        Nous prenons votre confidentialité au sérieux. Remplissez vos informations personnelles en toute sécurité grâce à notre système de cryptage avancé. Nous vous guidons pas à pas pour garantir que vos données restent protégées du début à la fin du processus.
+                        Nous prenons votre confidentialité au sérieux. Remplissez vos
+                        informations personnelles en toute sécurité grâce à notre système
+                        de cryptage avancé. Nous vous guidons pas à pas pour garantir que
+                        vos données restent protégées du début à la fin du processus.
                     </p>
                 </div>
-                
+
                 <div class="gap-2">
                     <figure class="flex flex-col items-center justify-center">
-                        <img src="./images/gadget.png" class="w-[100px] mx-auto mb-4" alt="">
+                        <img src="./images/gadget.png" class="w-[100px] mx-auto mb-4" alt="" />
                         <div class="flex flex-col items-center justify-center">
-                            <h2 class="text-[#6bb5e7] font-bold">Sélectionnez l'Offre Idéale</h2>
+                            <h2 class="text-[#6bb5e7] font-bold">
+                                Sélectionnez l'Offre Idéale
+                            </h2>
                             <h2 class="text-[#497b9c] font-bold mb-4">pour Vous</h2>
                         </div>
                     </figure>
                     <p class="text-[0.7rem] text-gray-500 lg:text-[1rem]">
-                        Explorez une variété d'options d'assurance personnalisées pour répondre précisément à vos besoins. Utilisez nos filtres intuitifs pour trouver facilement l'offre qui correspond le mieux à votre situation et à votre budget. Nous vous aidons à faire un choix éclairé, avec des explications claires et des comparatifs détaillés.ifs pour trouver facilement l'offre qui correspond le mieux
-                        à votre situation et à votre budget.
+                        Explorez une variété d'options d'assurance personnalisées pour
+                        répondre précisément à vos besoins. Utilisez nos filtres intuitifs
+                        pour trouver facilement l'offre qui correspond le mieux à votre
+                        situation et à votre budget. Nous vous aidons à faire un choix
+                        éclairé, avec des explications claires et des comparatifs
+                        détaillés.ifs pour trouver facilement l'offre qui correspond le
+                        mieux à votre situation et à votre budget.
                     </p>
                 </div>
                 <div class="gap-2">
                     <figure class="flex flex-col items-center justify-center">
-                        <img src="./images/sans-contact.png" class="w-[100px] mx-auto mb-4" alt="">
+                        <img src="./images/sans-contact.png" class="w-[100px] mx-auto mb-4" alt="" />
                         <div class="flex flex-col items-center justify-center">
                             <h2 class="text-[#6bb5e7] font-bold">Réglez votre Assurance</h2>
                             <h2 class="text-[#497b9c] font-bold mb-4">Sans Souci</h2>
                         </div>
                     </figure>
                     <p class="text-[0.7rem] text-gray-500 lg:text-[1rem]">
-                        Effectuez votre paiement en toute tranquillité grâce à nos méthodes sécurisées et vérifiées. Nous acceptons une large gamme de moyens de paiement pour vous offrir flexibilité et commodité.
+                        Effectuez votre paiement en toute tranquillité grâce à nos
+                        méthodes sécurisées et vérifiées. Nous acceptons une large gamme
+                        de moyens de paiement pour vous offrir flexibilité et commodité.
                     </p>
                 </div>
 
                 <div class="gap-2">
                     <figure class="flex flex-col items-center justify-center">
-                        <img src="./images/dossier-ouvert.png" class="w-[100px] mx-auto mb-4" alt="">
+                        <img src="./images/dossier-ouvert.png" class="w-[100px] mx-auto mb-4" alt="" />
                         <div class="flex flex-col items-center justify-center">
                             <h2 class="text-[#6bb5e7] font-bold">Obtenez Instantanément</h2>
-                            <h2 class="text-[#497b9c] font-bold mb-4">votre attestation digitale</h2>
+                            <h2 class="text-[#497b9c] font-bold mb-4">
+                                votre attestation digitale
+                            </h2>
                         </div>
                     </figure>
                     <p class="text-[0.7rem] text-gray-500 lg:text-[1rem]">
-                        Dès que votre paiement est validé, votre attestation d'assurance vous est délivrée immédiatement. Accédez à votre attestation électronique depuis n'importe quel appareil, téléchargez-la ou imprimez-la selon votre convenance. Profitez de la couverture instantanée et de la tranquillité d'esprit que vous méritez.
+                        Dès que votre paiement est validé, votre attestation d'assurance
+                        vous est délivrée immédiatement. Accédez à votre attestation
+                        électronique depuis n'importe quel appareil, téléchargez-la ou
+                        imprimez-la selon votre convenance. Profitez de la couverture
+                        instantanée et de la tranquillité d'esprit que vous méritez.
                     </p>
                 </div>
             </div>
         </section>
-        <section class="text-center sm:h-[500px] lg:h-[90vh] bg-gray-100 px-4 lg:py-8">
+        <section class="text-center sm:h-[500px] lg:h-[90vh] bg-gray-100 px-4 lg:py-8 pb-8 lg:pb-0">
             <div class="flex flex-col items-center justify-center w-full h-20">
-                <h2 class="text-[#497b9c] py-2 font-bold lg:text-2xl">Ils nous ont fait confiance, Ils témoignent</h2>
+                <h2 class="text-[#497b9c] py-2 font-bold lg:text-2xl">
+                    Ils nous ont fait confiance, Ils témoignent
+                </h2>
                 <span class="bg-[#ff802b] w-[100px] h-1"></span>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-[13px] lg:gap-10 pt-4 lg:pt-20 lg:px-20">
-                <div class="flex flex-col items-center justify-center border-b-4 border-[#409fdf] bg-white py-6 rounded-xl shadow-md gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-[13px] lg:gap-16 pt-4 lg:pt-20 lg:px-32">
+                <div
+                    class="flex flex-col items-center justify-center border-b-4 border-[#409fdf] bg-white py-6 rounded-xl shadow-md gap-4">
                     <figure class="flex flex-col items-center justify-center gap-2">
-                        <img src="./images/Rev_1.png" class="rounded-full w-[50px] h-[50px] mt-4" alt="">
+                        <img src="./images/Rev_1.png" class="rounded-full w-[50px] h-[50px] mt-4" alt="" />
                         <figcaption class="font-bold">Konan Dieng</figcaption>
                     </figure>
                     <div class="flex items-center justify-center w-full h-6 bg-gray-100">
-                        <img src="./images/5_stars.png" class="w-[60px]" alt="">
+                        <img src="./images/5_stars.png" class="w-[60px]" alt="" />
                     </div>
-                    <p class="text-[0.7rem] text-gray-500 lg:text-[1rem] px-[30px]">Je suis très satisfait de mon assurance auto chez Atlanta Assurance ! Le processus de souscription a été rapide et facile, et le service client est exceptionnel. Ils répondent toujours à mes questions rapidement et avec beaucoup de professionnalisme. Je recommande vivement !</p>
+                    <p class="text-[0.7rem] text-gray-500 lg:text-[1rem] px-[30px]">
+                        Je suis très satisfait de mon assurance auto chez Atlanta
+                        Assurance ! Le processus de souscription a été rapide et facile,
+                        et le service client est exceptionnel. Ils répondent toujours à
+                        mes questions rapidement et avec beaucoup de professionnalisme. Je
+                        recommande vivement !
+                    </p>
                 </div>
-                <div class="flex flex-col items-center justify-center border-b-4 border-[#409fdf] bg-white py-6 rounded-xl shadow-md gap-4">
+                <div
+                    class="flex flex-col items-center justify-center border-b-4 border-[#409fdf] bg-white py-6 rounded-xl shadow-md gap-4">
                     <figure class="flex flex-col items-center justify-center gap-2">
-                        <img src="./images/Rev_2.png" class="rounded-full w-[50px] h-[50px]" alt="">
+                        <img src="./images/Rev_2.png" class="rounded-full w-[50px] h-[50px]" alt="" />
                         <figcaption class="font-bold">Kouassi Affoué</figcaption>
                     </figure>
                     <div class="flex items-center justify-center w-full h-6 bg-gray-100">
-                        <img src="./images/5_stars.png" class="w-[60px]" alt="">
+                        <img src="./images/5_stars.png" class="w-[60px]" alt="" />
                     </div>
-                    <p class="text-[0.7rem] text-gray-500 lg:text-[1rem] px-[30px]">Atlanta Assurance offre une couverture complète à des tarifs très compétitifs. Après avoir comparé plusieurs offres, je suis content d'avoir choisi Atlanta pour mon assurance auto. Les garanties sont excellentes et le service est toujours à l'écoute. Très recommandé !</p>
+                    <p class="text-[0.7rem] text-gray-500 lg:text-[1rem] px-[30px]">
+                        Atlanta Assurance offre une couverture complète à des tarifs très
+                        compétitifs. Après avoir comparé plusieurs offres, je suis content
+                        d'avoir choisi Atlanta pour mon assurance auto. Les garanties sont
+                        excellentes et le service est toujours à l'écoute. Très recommandé
+                        !
+                    </p>
                 </div>
-                <div class="flex flex-col items-center justify-center border-b-4 border-[#409fdf] bg-white py-6 rounded-xl shadow-md gap-4">
+                <div
+                    class="flex flex-col items-center justify-center border-b-4 border-[#409fdf] bg-white py-6 rounded-xl shadow-md gap-4">
                     <figure class="flex flex-col items-center justify-center gap-2">
-                        <img src="./images/Rev_3.png" class="rounded-full w-[50px] h-[50px]" alt="">
+                        <img src="./images/Rev_3.png" class="rounded-full w-[50px] h-[50px]" alt="" />
                         <figcaption class="font-bold">Adjoua Baumann</figcaption>
                     </figure>
                     <div class="flex items-center justify-center w-full h-6 bg-gray-100">
-                        <img src="./images/5_stars.png" class="w-[60px]" alt="">
+                        <img src="./images/5_stars.png" class="w-[60px]" alt="" />
                     </div>
-                    <p class="text-[0.7rem] text-gray-500 lg:text-[1rem] px-[30px]">En tant que nouveau client chez Atlanta Assurance, je suis impressionné par l'efficacité et la simplicité du service. Obtenir mon assurance auto a été une expérience sans stress, et je sens que ma voiture est bien protégée. Merci Atlanta pour votre professionnalisme !</p>
+                    <p class="text-[0.7rem] text-gray-500 lg:text-[1rem] px-[30px]">
+                        En tant que nouveau client chez Atlanta Assurance, je suis
+                        impressionné par l'efficacité et la simplicité du service. Obtenir
+                        mon assurance auto a été une expérience sans stress, et je sens
+                        que ma voiture est bien protégée. Merci Atlanta pour votre
+                        professionnalisme !
+                    </p>
                 </div>
             </div>
         </section>
-        <section class="lg:flex lg:items-center lg:justify-center sm:h-[550px] lg:h-[60vh] bg-[#c6e4f59e]">
-            <div class="flex flex-col items-start justify-start lg:items-center lg:justify-center w-full lg:w-[40%] lg:h-full h-[50%] p-8">
-                <img src="./images/chat_lady.png" class="sm:w-[338px] sm:h-[212px] lg:w-[400px] lg:h-[280px]" alt="">
+        <section class="lg:flex lg:items-center lg:justify-center sm:h-[550px] lg:h-[60vh] bg-[#c6e4f59e] pb-8 lg:pb-0">
+            <div
+                class="flex flex-col items-start justify-start lg:items-center lg:justify-center w-full lg:w-[40%] lg:h-full h-[50%] p-8">
+                <img src="./images/chat_lady.png" class="sm:w-[338px] sm:h-[212px] lg:w-[400px] lg:h-[280px]" alt="" />
             </div>
-            <div class="flex flex-col items-start justify-start w-full lg:w-[60%] lg:h-full h-[50%] px-6 lg:py-20">
-                <h2 class="text-[#497b9c] text-2xl font-bold lg:text-3xl my-8 lg:font-extrabold">Contact avec ATLANTA ASSURANCE</h2>
-                <p class="text-[0.8rem] text-gray-700 lg:text-[1rem]">Vous souhaitez des informations sur nos assurances ou des conseils? Nous somme disponible de 8h30 à 17h00
-                    Complétez notre formulaire, nous vous contacterons immédiatement.</p>
-                <button class="text-[#497b9c] font-extrabold rounded-lg flex items-center justify-center w-full py-4 border-2 border-[#497b9c] mt-16">Contactez-nous</button>
+            <div
+                class="flex flex-col items-start justify-start w-full lg:w-[60%] lg:h-full h-[50%] px-6 lg:py-16 lg:pr-8">
+                <h2 class="text-[#497b9c] text-xl sm:text-2xl font-bold lg:text-3xl my-8 lg:font-extrabold">
+                    Contact avec ATLANTA ASSURANCE
+                </h2>
+                <p class="text-[0.8rem] text-gray-700 lg:text-[1rem]">
+                    Vous souhaitez des informations sur nos assurances ou des conseils?
+                    Nous somme disponible de 8h30 à 17h00 Complétez notre formulaire,
+                    nous vous contacterons immédiatement.
+                </p>
+                <div class="hidden lg:flex items-end justify-end w-full pr-32">
+                    <button
+                        class="text-[#497b9c] font-extrabold rounded-lg flex items-center justify-center w-full lg:w-[280px] py-4 border-2 border-[#497b9c] mt-16">
+                        Contactez-nous
+                    </button>
+                </div>
+                <button
+                    class="lg:hidden text-[#497b9c] font-extrabold rounded-lg flex items-center justify-center w-full lg:w-[300px] py-4 border-2 border-[#497b9c] mt-16">
+                    Contactez-nous
+                </button>
             </div>
         </section>
     </main>
-    <footer class="flex items-center justify-center w-full h-[80vh] bg-blue-950 text-white">
-        <div>
-            <h3>PRODUITS</h3>
+    <footer class="w-full h-[74vh] bg-blue-950 text-white">
+        <!-- <div class="grid grid-cols-1 sm:grid-cols-6 w-full h-[66vh] bg-blue-950 text-white text-center sm:text-start gap-6 p-8">
+            <div class="space-y-2">
+                <h3 class="font-bold">PRODUITS</h3>
+                <nav>
+                    <ul class="space-y-2">
+                        <li><a href="#">Voiture</a></li>
+                        <li><a href="#">Moto</a></li>
+                        <li><a href="#">Camionette</a></li>
+                        <li><a href="#">Camion</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div style="grid-template-columns: 2fr;" class="space-y-2">
+                <h3 class="font-bold">SERVICES APRES VENTE</h3>
+                <nav>
+                    <ul class="space-y-2">
+                        <li><a href="#">Assistance</a></li>
+                        <li><a href="#">Compliments et critiques</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="space-y-2">
+                <h3 class="font-bold">ATLANTA</h3>
+                <nav>
+                    <ul class="space-y-2">
+                        <li><a href="#">Qui sommes-nous</a></li>
+                        <li><a href="#">Mention légale</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="space-y-2">
+                <h3 class="font-bold">CONTACT</h3>
+                <nav>
+                    <ul class="space-y-2">
+                        <li><a href="#">27 22 22 44 00</a></li>
+                        <li><a href="#">Le numéro court 1601</a></li>
+                        <li><a href="#">Support@at</a></li>
+                        <li ><a href="#">ATLANTA ASSURANCE Siége Plateau, avenue Noguès Immeuble Broadway</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h3 class="font-bold">SUIVEZ-NOUS</h3>
+            </div>
+            <div class="flex items-center justify-center h-full bg-gray-400">
+                <img src="./images/en-haut.png" class="rounded-full bg-gray-300 flex items-center justify-center p-[10px]" alt="">
+            </div>
+        </div> -->
+
+        <div class="w-full bg-blue-950 text-white text-center sm:text-start p-8 overflow-x-hidden lg:overflow-visible">
+            <div class="grid grid-cols-1 sm:grid-cols-7 gap-6">
+                <!-- PRODUITS -->
+                <div class="space-y-2">
+                    <h3 class="font-bold">PRODUITS</h3>
+                    <nav>
+                        <ul class="space-y-2">
+                            <li><a href="#">Voiture</a></li>
+                            <li><a href="#">Moto</a></li>
+                            <li><a href="#">Camionette</a></li>
+                            <li><a href="#">Camion</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- SERVICES APRÈS VENTE (2 colonnes) -->
+                <div class="sm:col-span-2 space-y-2">
+                    <h3 class="font-bold">SERVICES APRES VENTE</h3>
+                    <nav>
+                        <ul class="space-y-2">
+                            <li><a href="#">Assistance</a></li>
+                            <li><a href="#">Compliments et critiques</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- ATLANTA -->
+                <div class="space-y-2">
+                    <h3 class="font-bold">ATLANTA</h3>
+                    <nav>
+                        <ul class="space-y-2">
+                            <li><a href="#">Qui sommes-nous</a></li>
+                            <li><a href="#">Mention légale</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="space-y-2">
+                    <h3 class="font-bold">CONTACT</h3>
+                    <nav>
+                        <ul class="space-y-2 text-sm leading-relaxed">
+                            <li><a href="#">27 22 22 44 00</a></li>
+                            <li><a href="#">Le numéro court 1601</a></li>
+                            <li><a href="#">support@at</a></li>
+                            <li>
+                                <a href="#">ATLANTA ASSURANCE<br />Siège Plateau,<br />avenue Noguès<br />Immeuble
+                                    Broadway</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- SUIVEZ-NOUS -->
+                <div class="space-y-2">
+                    <h3 class="font-bold">SUIVEZ-NOUS</h3>
+                </div>
+
+                <!-- FLECHE -->
+                <div class="flex items-center justify-center h-full">
+                    <img src="./images/en-haut.png" alt="Flèche" class="rounded-full bg-gray-300 p-[10px]" />
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>SERVICES APRES VENTE</h3>
-        </div>
-        <div>
-            <h3>ATLANTA</h3>
-        </div>
-        <div>
-            <h3>CONTACT</h3>
-        </div>
-        <div>
-            <h3>SUIVEZ-NOUS</h3>
-        </div>
-        <div>
-            <img src="./images/en-haut.png" alt="">
+
+        <div
+            class="flex items-center justify-center sm:justify-start pl-4 w-full h-[8vh] bg-black text-[0.8rem] font-light">
+            <p>Release 1.1</p>
         </div>
     </footer>
 
