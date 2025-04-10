@@ -382,62 +382,14 @@
         </section>
     </main>
     <footer class="w-full h-[74vh] bg-blue-950 text-white">
-        <!-- <div class="grid grid-cols-1 sm:grid-cols-6 w-full h-[66vh] bg-blue-950 text-white text-center sm:text-start gap-6 p-8">
-            <div class="space-y-2">
-                <h3 class="font-bold">PRODUITS</h3>
-                <nav>
-                    <ul class="space-y-2">
-                        <li><a href="#">Voiture</a></li>
-                        <li><a href="#">Moto</a></li>
-                        <li><a href="#">Camionette</a></li>
-                        <li><a href="#">Camion</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div style="grid-template-columns: 2fr;" class="space-y-2">
-                <h3 class="font-bold">SERVICES APRES VENTE</h3>
-                <nav>
-                    <ul class="space-y-2">
-                        <li><a href="#">Assistance</a></li>
-                        <li><a href="#">Compliments et critiques</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="space-y-2">
-                <h3 class="font-bold">ATLANTA</h3>
-                <nav>
-                    <ul class="space-y-2">
-                        <li><a href="#">Qui sommes-nous</a></li>
-                        <li><a href="#">Mention légale</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="space-y-2">
-                <h3 class="font-bold">CONTACT</h3>
-                <nav>
-                    <ul class="space-y-2">
-                        <li><a href="#">27 22 22 44 00</a></li>
-                        <li><a href="#">Le numéro court 1601</a></li>
-                        <li><a href="#">Support@at</a></li>
-                        <li ><a href="#">ATLANTA ASSURANCE Siége Plateau, avenue Noguès Immeuble Broadway</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <h3 class="font-bold">SUIVEZ-NOUS</h3>
-            </div>
-            <div class="flex items-center justify-center h-full bg-gray-400">
-                <img src="./images/en-haut.png" class="rounded-full bg-gray-300 flex items-center justify-center p-[10px]" alt="">
-            </div>
-        </div> -->
-
-        <div class="w-full bg-blue-950 text-white text-center sm:text-start p-8 overflow-x-hidden lg:overflow-visible">
-            <div class="grid grid-cols-1 sm:grid-cols-7 gap-6">
+        <div
+            class="w-full h-[66vh] bg-[#010244] text-white text-center sm:text-start sm:pl-10 py-8 overflow-x-hidden lg:overflow-visible">
+            <div class="grid grid-cols-1 sm:[grid-template-columns:repeat(6,minmax(0,1fr))_40px] gap-6">
                 <!-- PRODUITS -->
                 <div class="space-y-2">
                     <h3 class="font-bold">PRODUITS</h3>
                     <nav>
-                        <ul class="space-y-2">
+                        <ul class="space-y-2 text-gray-400">
                             <li><a href="#">Voiture</a></li>
                             <li><a href="#">Moto</a></li>
                             <li><a href="#">Camionette</a></li>
@@ -450,7 +402,7 @@
                 <div class="sm:col-span-2 space-y-2">
                     <h3 class="font-bold">SERVICES APRES VENTE</h3>
                     <nav>
-                        <ul class="space-y-2">
+                        <ul class="space-y-2 text-gray-400">
                             <li><a href="#">Assistance</a></li>
                             <li><a href="#">Compliments et critiques</a></li>
                         </ul>
@@ -461,7 +413,7 @@
                 <div class="space-y-2">
                     <h3 class="font-bold">ATLANTA</h3>
                     <nav>
-                        <ul class="space-y-2">
+                        <ul class="space-y-2 text-gray-400">
                             <li><a href="#">Qui sommes-nous</a></li>
                             <li><a href="#">Mention légale</a></li>
                         </ul>
@@ -469,10 +421,10 @@
                 </div>
 
                 <!-- CONTACT -->
-                <div class="space-y-2">
+                <div class="space-y-2 sm:overflow-x-auto lg:overflow-visible">
                     <h3 class="font-bold">CONTACT</h3>
                     <nav>
-                        <ul class="space-y-2 text-sm leading-relaxed">
+                        <ul class="space-y-2 leading-relaxed text-gray-400">
                             <li><a href="#">27 22 22 44 00</a></li>
                             <li><a href="#">Le numéro court 1601</a></li>
                             <li><a href="#">support@at</a></li>
@@ -489,9 +441,12 @@
                     <h3 class="font-bold">SUIVEZ-NOUS</h3>
                 </div>
 
-                <!-- FLECHE -->
+                <!-- FLECHE AVEC RETOUR EN HAUT -->
                 <div class="flex items-center justify-center h-full">
-                    <img src="./images/en-haut.png" alt="Flèche" class="rounded-full bg-gray-300 p-[10px]" />
+                    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                        <img src="./images/en-haut.png" alt="Retour en haut"
+                            class="rounded-full bg-gray-300 p-[10px]" />
+                    </button>
                 </div>
             </div>
         </div>
