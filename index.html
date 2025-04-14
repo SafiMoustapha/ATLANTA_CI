@@ -24,6 +24,20 @@
             z-index: -1;
             /* Place l'image en arrière-plan */
         }
+
+        @keyframes slideOutRight {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(1%);
+            }
+        }
+
+        .slide-out {
+            animation: slideOutRight 0.5s ease forwards;
+        }
     </style>
 </head>
 
@@ -31,15 +45,14 @@
     <header
         class="w-full flex items-center lg:justify-between px-4 py-1 bg-white shadow-md h-[75px] lg:h-[85px] fixed top-0 left-0 right-0 z-50">
         <div class="flex items-center justify-start gap-40">
-            <div class="menu p-4 flex items-center justify-center relative cursor-pointer lg:hidden hover:bg-gray-300"
+            <div id="menuToggle"
+                class="menu p-4 flex items-center justify-start relative cursor-pointer lg:hidden hover:bg-gray-300"
                 onmouseenter="showHoverImage()" onmouseleave="resetImage()" onclick="changeImage()">
-                <!-- Image normale (affichée par défaut) -->
                 <img id="menuImage" src="./images/menu (4).png" alt="Menu"
-                    class="absolute inset-0 transition-opacity duration-300 m-auto w-7" />
-                <!-- Image au survol (cachée par défaut) -->
-                <img id="hoverImage" src="./images/menu (3).png" alt="Menu Hover"
-                    class="absolute inset-0 transition-opacity duration-300 m-auto w-5" />
+                    class="transition-transform duration-300 ease-in-out w-7 hover:scale-90 active:scale-75" />
             </div>
+
+
             <div class="logo lg:ml-10">
                 <img src="./images/AtantaLogoHD.png" alt="Logo" class="w-44 h-auto" />
             </div>
@@ -51,7 +64,7 @@
                         <a href="#">Assistance</a>
                     </li>
                     <li
-                        class="hover:bg-gray-300 p-2 rounded-sm transition duration-300 flex items-center justify-center relative group gap-1">
+                        class="hover:bg-gray-300 p-2 rounded-sm transition duration-300 flex items-center justify-start relative group gap-1">
                         <a href="#">Assurance Auto</a>
                         <img src="./images/fleche-vers-le-bas (1).png" alt="" />
                     </li>
@@ -112,20 +125,19 @@
                         <img src="./images/Logos_payment.png" alt="" />
                     </div>
                 </div>
-                <div class="photo hidden lg:flex items-center justify-center w-1/2 h-full">
+                <div class="photo hidden lg:flex items-center justify-start w-1/2 h-full">
                     <img src="./images/Header.png" alt="Image d'assurance" />
                 </div>
             </div>
-            <div
-                class="w-full h-10 flex lg:hidden items-center justify-center bg-[#497b9c] font-semibold text-[0.7rem]">
+            <div class="w-full h-10 flex lg:hidden items-center justify-center bg-[#497b9c] font-semibold text-[0.7rem]">
                 <h2>CALCULER MON ASSURANCE</h2>
             </div>
-            <div class="flex lg:hidden items-start justify-center h-14 bg-gray-50 pt-2">
+            <div class="flex lg:hidden items-center justify-center h-14 bg-gray-50 pt-2">
                 <img src="./images/Logos_payment.png" class="w-40" alt="" />
             </div>
         </section>
         <section class="text-center bg-slate-200 h-auto sm:h-[350px] lg:h-[90vh] lg:py-10 pb-8 lg:pb-0">
-            <div class="flex flex-col items-center justify-center w-full h-20">
+            <div class="flex flex-col items-center justify-start w-full h-20">
                 <h2 class="text-[#497b9c] py-2 font-bold lg:text-3xl">
                     Pourquoi choisir ATLANTA ASSURANCE?
                 </h2>
@@ -134,7 +146,7 @@
             <div
                 class="grid sm:grid-rows-3 grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-4 lg:gap-y-10 px-10 lg:px-40 lg:py-20 text-center items-start box-border">
                 <div class="grid sm:grid-rows-3 gap-2">
-                    <figure class="flex flex-col items-center justify-center">
+                    <figure class="flex flex-col items-center justify-start">
                         <img src="./images/digital_humain.png" class="w-[60px] lg:w-[108px] mx-auto mb-4 lg:mb-10"
                             alt="" />
                         <h2 class="text-[#497b9c] font-bold lg:text-xl leading-tight mb-4 lg:mb-10">
@@ -150,7 +162,7 @@
                 </div>
 
                 <div class="grid sm:grid-rows-3 gap-2">
-                    <figure class="flex flex-col items-center justify-center">
+                    <figure class="flex flex-col items-center justify-start">
                         <img src="./images/paiement_sinistres.png" class="w-[55px] lg:w-[100px] mx-auto mb-4 lg:mb-10"
                             alt="" />
                         <h2 class="text-[#497b9c] font-bold lg:text-xl leading-tight mb-4 lg:mb-10">
@@ -165,7 +177,7 @@
                 </div>
 
                 <div class="grid sm:grid-rows-3 gap-2">
-                    <figure class="flex flex-col items-center justify-center">
+                    <figure class="flex flex-col items-center justify-start">
                         <img src="./images/jeune_dynamique.png" class="w-[80px] lg:w-[145px] mx-auto mb-4 lg:mb-10"
                             alt="" />
                         <h2 class="text-[#497b9c] font-bold lg:text-xl leading-tight mb-4 lg:mb-10">
@@ -182,33 +194,33 @@
             </div>
         </section>
         <section class="text-center bg-slate-50 sm:h-[250px] lg:h-[45vh] lg:pt-4 pb-8 lg:pb-0">
-            <div class="flex flex-col items-center justify-center w-full h-20">
+            <div class="flex flex-col items-center justify-start w-full h-20">
                 <h2 class="text-[#497b9c] py-2 font-bold lg:text-2xl">
                     Votre PROTECTION commence ici : Veuillez découvrir nos OFFRES
                 </h2>
                 <span class="bg-[#ff802b] w-[100px] h-1"></span>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-4 w-full gap-8 p-4 lg:gap-4 lg:px-10 lg:py-10">
-                <div class="flex flex-col items-center justify-center w-full border border-gray-300 p-2">
+                <div class="flex flex-col items-center justify-start w-full border border-gray-300 p-2">
                     <img src="./images/car.png" class="w-[100px]" alt="" />
                     <h2 class="text-gray-400 font-bold">Voiture</h2>
                 </div>
-                <div class="flex flex-col items-center justify-center w-full border border-gray-300 p-2">
+                <div class="flex flex-col items-center justify-start w-full border border-gray-300 p-2">
                     <img src="./images/scooter.png" class="w-[100px]" alt="" />
                     <h2 class="text-gray-400 font-bold">Moto</h2>
                 </div>
-                <div class="flex flex-col items-center justify-center w-full border border-gray-300 p-2">
+                <div class="flex flex-col items-center justify-start w-full border border-gray-300 p-2">
                     <img src="./images/van.png" class="w-[100px]" alt="" />
                     <h2 class="text-gray-400 font-bold">Camionette</h2>
                 </div>
-                <div class="flex flex-col items-center justify-center w-full border border-gray-300 p-2">
+                <div class="flex flex-col items-center justify-start w-full border border-gray-300 p-2">
                     <img src="./images/camion.png" class="w-[100px]" alt="" />
                     <h2 class="text-gray-400 font-bold">Camion</h2>
                 </div>
             </div>
         </section>
         <section class="text-center sm:h-[620px] lg:h-[110vh] lg:px-10 lg:py-10 bg-gray-200 pb-8 lg:pb-0">
-            <div class="flex flex-col items-center justify-center w-full h-20">
+            <div class="flex flex-col items-center justify-start w-full h-20">
                 <h2 class="text-[#497b9c] py-2 font-bold lg:text-2xl">
                     Démarrer avec ATLANTA ASSURANCE : Un Processus Simple
                 </h2>
@@ -218,9 +230,9 @@
             <div
                 class="grid grid-cols-1 sm:grid-cols-4 w-full gap-8 py-4 px-16 lg:gap-4 lg:px-10 lg:py-8 lg:mt-8 text-center">
                 <div class="gap-2">
-                    <figure class="flex flex-col items-center justify-center">
+                    <figure class="flex flex-col items-center justify-start">
                         <img src="./images/le-marketing-numerique.png" class="w-[100px] mx-auto mb-4" alt="" />
-                        <div class="flex flex-col items-center justify-center">
+                        <div class="flex flex-col items-center justify-start">
                             <h2 class="text-[#6bb5e7] font-bold">
                                 Saisissez vos Informations
                             </h2>
@@ -238,9 +250,9 @@
                 </div>
 
                 <div class="gap-2">
-                    <figure class="flex flex-col items-center justify-center">
+                    <figure class="flex flex-col items-center justify-start">
                         <img src="./images/gadget.png" class="w-[100px] mx-auto mb-4" alt="" />
-                        <div class="flex flex-col items-center justify-center">
+                        <div class="flex flex-col items-center justify-start">
                             <h2 class="text-[#6bb5e7] font-bold">
                                 Sélectionnez l'Offre Idéale
                             </h2>
@@ -258,9 +270,9 @@
                     </p>
                 </div>
                 <div class="gap-2">
-                    <figure class="flex flex-col items-center justify-center">
+                    <figure class="flex flex-col items-center justify-start">
                         <img src="./images/sans-contact.png" class="w-[100px] mx-auto mb-4" alt="" />
-                        <div class="flex flex-col items-center justify-center">
+                        <div class="flex flex-col items-center justify-start">
                             <h2 class="text-[#6bb5e7] font-bold">Réglez votre Assurance</h2>
                             <h2 class="text-[#497b9c] font-bold mb-4">Sans Souci</h2>
                         </div>
@@ -273,9 +285,9 @@
                 </div>
 
                 <div class="gap-2">
-                    <figure class="flex flex-col items-center justify-center">
+                    <figure class="flex flex-col items-center justify-start">
                         <img src="./images/dossier-ouvert.png" class="w-[100px] mx-auto mb-4" alt="" />
-                        <div class="flex flex-col items-center justify-center">
+                        <div class="flex flex-col items-center justify-start">
                             <h2 class="text-[#6bb5e7] font-bold">Obtenez Instantanément</h2>
                             <h2 class="text-[#497b9c] font-bold mb-4">
                                 votre attestation digitale
@@ -293,7 +305,7 @@
             </div>
         </section>
         <section class="text-center sm:h-[500px] lg:h-[90vh] bg-gray-100 px-4 lg:py-8 pb-8 lg:pb-0">
-            <div class="flex flex-col items-center justify-center w-full h-20">
+            <div class="flex flex-col items-center justify-start w-full h-20">
                 <h2 class="text-[#497b9c] py-2 font-bold lg:text-2xl">
                     Ils nous ont fait confiance, Ils témoignent
                 </h2>
@@ -301,9 +313,9 @@
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-[13px] lg:gap-16 pt-4 lg:pt-20 lg:px-32">
                 <div
-                    class="flex flex-col items-center justify-center border-b-4 border-[#409fdf] bg-white py-6 rounded-xl shadow-md gap-4">
+                    class="flex flex-col items-center justify-start border-b-4 border-[#409fdf] bg-white py-6 rounded-xl shadow-md gap-4">
                     <figure class="flex flex-col items-center justify-center gap-2">
-                        <img src="./images/Rev_1.png" class="rounded-full w-[50px] h-[50px] mt-4" alt="" />
+                        <img src="./images/Rev_1.png" class="rounded-full w-[50px] h-[50px]" alt="" />
                         <figcaption class="font-bold">Konan Dieng</figcaption>
                     </figure>
                     <div class="flex items-center justify-center w-full h-6 bg-gray-100">
@@ -318,7 +330,7 @@
                     </p>
                 </div>
                 <div
-                    class="flex flex-col items-center justify-center border-b-4 border-[#409fdf] bg-white py-6 rounded-xl shadow-md gap-4">
+                    class="flex flex-col items-center justify-start border-b-4 border-[#409fdf] bg-white py-6 rounded-xl shadow-md gap-4">
                     <figure class="flex flex-col items-center justify-center gap-2">
                         <img src="./images/Rev_2.png" class="rounded-full w-[50px] h-[50px]" alt="" />
                         <figcaption class="font-bold">Kouassi Affoué</figcaption>
@@ -335,7 +347,7 @@
                     </p>
                 </div>
                 <div
-                    class="flex flex-col items-center justify-center border-b-4 border-[#409fdf] bg-white py-6 rounded-xl shadow-md gap-4">
+                    class="flex flex-col items-center justify-start border-b-4 border-[#409fdf] bg-white py-6 rounded-xl shadow-md gap-4">
                     <figure class="flex flex-col items-center justify-center gap-2">
                         <img src="./images/Rev_3.png" class="rounded-full w-[50px] h-[50px]" alt="" />
                         <figcaption class="font-bold">Adjoua Baumann</figcaption>
@@ -353,9 +365,9 @@
                 </div>
             </div>
         </section>
-        <section class="lg:flex lg:items-center lg:justify-center sm:h-[550px] lg:h-[60vh] bg-[#c6e4f59e] pb-8 lg:pb-0">
+        <section class="lg:flex lg:items-center lg:justify-start sm:h-[550px] lg:h-[60vh] bg-[#c6e4f59e] pb-8 lg:pb-0">
             <div
-                class="flex flex-col items-start justify-start lg:items-center lg:justify-center w-full lg:w-[40%] lg:h-full h-[50%] p-8">
+                class="flex flex-col items-start justify-start lg:items-center lg:justify-start w-full lg:w-[40%] lg:h-full h-[50%] p-8">
                 <img src="./images/chat_lady.png" class="sm:w-[338px] sm:h-[212px] lg:w-[400px] lg:h-[280px]" alt="" />
             </div>
             <div
@@ -370,7 +382,7 @@
                 </p>
                 <div class="hidden lg:flex items-end justify-end w-full pr-32">
                     <button
-                        class="text-[#497b9c] font-extrabold rounded-lg flex items-center justify-center w-full lg:w-[280px] py-4 border-2 border-[#497b9c] mt-16">
+                        class="text-[#497b9c] font-extrabold rounded-lg flex items-center justify-start w-full lg:w-[280px] py-4 border-2 border-[#497b9c] mt-16">
                         Contactez-nous
                     </button>
                 </div>
@@ -442,20 +454,73 @@
                 </div>
 
                 <!-- FLECHE AVEC RETOUR EN HAUT -->
-                <div class="flex items-center justify-center h-full">
+                <div class="flex items-center justify-start h-full">
                     <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-                        <img src="./images/en-haut.png" alt="Retour en haut"
-                            class="rounded-full bg-gray-300 p-[10px]" />
+                        <img src="./images/en-haut.png" alt="Retour en haut" class="rounded-full p-[10px]" />
                     </button>
                 </div>
             </div>
         </div>
 
         <div
-            class="flex items-center justify-center sm:justify-start pl-4 w-full h-[8vh] bg-black text-[0.8rem] font-light">
+            class="flex items-center justify-start sm:justify-start pl-4 w-full h-[8vh] bg-black text-[0.8rem] font-light">
             <p>Release 1.1</p>
         </div>
     </footer>
+
+    <aside id="sideMenu" class="hidden w-[33%] h-screen mt-[75px] lg:mt-[85px] bg-[#497b9c] fixed top-0 left-0 z-50">
+        <div class="w-full h-auto bg-none flex items-center justify-start p-4 border-b border-gray-400">
+            <div class="flex items-center justify-start w-6 mr-2">
+                <img src="./images/accueil.png" alt="">
+            </div>
+            <div>
+                <p class="text-white text-[1rem]">Assistance</p>
+            </div>
+        </div>
+        <div class="w-full h-auto bg-none flex items-center justify-start p-4 border-b border-gray-400">
+            <div class="flex items-center justify-start w-6 mr-2">
+                <img src="./images/accueil.png" alt="">
+            </div>
+            <div>
+                <p class="text-white text-[1rem] mr-14">Assurance Auto</p>
+            </div>
+            <div class="flex items-center justify-center h-full">
+                <img src="./images/fleche.png" class="w-[12px]" alt="">
+            </div>
+        </div>
+        <div class="w-full h-auto bg-none flex items-center justify-start p-4 border-b border-gray-400">
+            <div class="flex items-center justify-start w-6 mr-2">
+                <img src="./images/accueil.png" alt="">
+            </div>
+            <div>
+                <p class="text-white text-[1rem]">Qui sommes-nous</p>
+            </div>
+        </div>
+        <div class="w-full h-auto bg-none flex items-center justify-start p-4 border-b border-gray-400">
+            <div class="flex items-center justify-start w-6 mr-2">
+                <img src="./images/accueil.png" alt="">
+            </div>
+            <div>
+                <p class="text-white text-[1rem]">FAQ</p>
+            </div>
+        </div>
+        <div class="w-full h-auto bg-none flex items-center justify-start p-4 border-b border-gray-400">
+            <div class="flex items-center justify-start w-6 mr-2">
+                <img src="./images/accueil.png" alt="">
+            </div>
+            <div>
+                <p class="text-white text-[1rem]">Nous contacter</p>
+            </div>
+        </div>
+        <div class="w-full h-auto bg-none flex items-center justify-start p-4 border-b border-gray-400">
+            <div class="flex items-center justify-start w-6 mr-2">
+                <img src="./images/contactez-nous (1).png" alt="">
+            </div>
+            <div>
+                <p class="text-white text-[1rem]">Mon Compte</p>
+            </div>
+        </div>
+    </aside>
 
     <script src="script.js"></script>
 </body>
